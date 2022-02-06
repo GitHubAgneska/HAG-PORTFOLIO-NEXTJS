@@ -23,7 +23,7 @@ const AppItem = (app) => {
               
               <Tooltip tooltipContent='deploy in progress!' parent='deploy' />
               <a href={app[a].deployLink} aria-label='app deploy'>
-                <Image src={app[a].logo} layout="fill" alt='app logo' />
+                <Image src={app[a].logo} layout="fill" alt='app logo' priority='true'/>
               </a>
               
               { !app[a].deployed && 

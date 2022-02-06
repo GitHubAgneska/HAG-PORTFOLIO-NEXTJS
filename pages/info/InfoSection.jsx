@@ -1,3 +1,4 @@
+import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -11,6 +12,16 @@ import { StyledInfoSection, InfoSectionWrapper, InfoPres, InfoPresText,InfoPresL
 
 const githubagneska = 'https://github.com/GitHubAgneska'
 const linkedIn = 'https://www.linkedin.com/in/h-agnes-genay/'
+
+// https://nextjs.org/docs/api-reference/next/link#if-the-child-is-a-function-component
+// eslint-disable-next-line react/display-name
+const DownloadLink = React.forwardRef(({ onClick, href }, ref) => {
+    return (
+        <a href={href} onClick={onClick} ref={ref}>
+            <Image src={downloadresumeIcon} alt='download resume icon' />
+        </a>
+    )
+})
 
 const InfoSection = () => {
     return (
@@ -30,7 +41,7 @@ const InfoSection = () => {
     
                     <DownloadIconWrapper>
                         <Link href="../../public/cv/HAG_frontend_dev-CV_2022.png" passHref target="_blank" download>
-                            <Image src={downloadresumeIcon} alt='download resume icon' />
+                            <DownloadLink />
                         </Link>
                     </DownloadIconWrapper>
 

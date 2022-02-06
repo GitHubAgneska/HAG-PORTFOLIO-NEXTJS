@@ -14,7 +14,7 @@ const designLayouts = [ candychaseDesign, cartongeniusDesign, wstDesign, wstDesi
 
 const HagCarousel = () => {
     return (
-        <Carousel>
+        <Carousel showThumbs={false}>
             { designLayouts.map( d => (
                 
                 <div key={Math.random()}>

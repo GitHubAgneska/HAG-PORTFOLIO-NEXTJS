@@ -64,7 +64,7 @@ export const AppLogoWrapper = styled.div`
         max-width:50%;
         padding: 1%;
     }
-    a { overflow: hidden;}
+    a { overflow: hidden; position: relative; width:100%; height: 100%;}
     img {
         height: 100%;
         max-width: 100%;
