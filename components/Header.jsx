@@ -8,7 +8,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { StyledHeader, MainLogoWrapper } from '../styles/Header_style'
 //import { SrOnlyH1 } from '../styles/global_style'
-import hagLogo from '../public/logos/hag_logo_white_full.png'
+// import hagLogo from '../public/logos/hag_logo_white_full.png'
 import NavComponent from '../components/Nav'
 
 
@@ -17,7 +17,7 @@ import NavComponent from '../components/Nav'
 const MainLogo = React.forwardRef(({ onClick, href }, ref) => {
   return (
     <a href={href} onClick={onClick} ref={ref}>
-      <Image src={hagLogo} alt='hag Logo' layout="responsive" />
+      <Image src="/logos/hag_logo_white_full.png" alt='hag Logo' layout="responsive" />
     </a>
   )
 })
