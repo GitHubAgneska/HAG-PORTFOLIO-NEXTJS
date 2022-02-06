@@ -8,7 +8,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { StyledHeader, MainLogoWrapper } from '../styles/Header_style'
 //import { SrOnlyH1 } from '../styles/global_style'
-import hagLogo from '../public/logos/hag_logo_darkBG_full.png'
+import hagLogo from '../public/logos/hag_logo_white_full.png'
 import NavComponent from '../components/Nav'
 
 
