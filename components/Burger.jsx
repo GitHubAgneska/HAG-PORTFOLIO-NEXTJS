@@ -1,16 +1,17 @@
 import { StyledBurger } from '../styles/Buger_style'
 import Link from 'next/link'
-
+import Image from 'next/image'
+import iconClose from '../public/icons/icon_close.png'
+import iconBurger  from '../public/icons/icon_burgerMenu.png'
 
 const Burger = ({ open, setOpen, hostParent }) => {
-
-  const navigateHome = () => { }
+  
   return (
 
     <StyledBurger hostParent={hostParent} open={open} onClick={setOpen}>
       {open
-        ? <i className='fas fa-times' id='closeNavIcon' />
-        : <Link href='/' passHref ><i className='fas fa-bars' id='burgerIcon' onClick={navigateHome}/></Link>}
+        ? <span id='closeNavIcon'><Image src={iconClose} alt='close icon' /></span>
+        : <span id='burgerIcon'><Link href='/' passHref><Image src={iconBurger} alt='burger icon' /></Link></span>}
     </StyledBurger>
   )
 }

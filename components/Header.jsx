@@ -17,22 +17,19 @@ const Header = () => {
   const router = useRouter()
   const location = router.pathname // or router.asPath
   // const location = useLocation();
-
-  const isHomePage = location.pathname === '/' || location.pathname === 'home'
+  const isHomePage = location.pathname === '/'
 
   return (
 
       <StyledHeader>
         <MainLogoWrapper>
-          
           <Link href="/" passHref>
-            <Image src={hagLogo} alt='hag Logo' layout="responsive"  />
+            <Image src={hagLogo} alt='hag Logo' layout="responsive" />
           </Link>
-          
          {/*  <SrOnlyH1>HAG portfolio webdev 2022</SrOnlyH1> */}
         </MainLogoWrapper>
         
-        { !isHomePage &&  <NavComponent /> }
+        { !isHomePage &&  <NavComponent hostParent="any" /> }
 
       </StyledHeader>
     )

@@ -18,9 +18,9 @@ const NavComponent = ({ hostParent }) => {
             <Burger open={burgerOpen} hostParent={hostParent} setOpen={handleClick} />
 
             <StyledNav burgerOpen={burgerOpen} hostParent={hostParent} >
-                <Link href='/development' passHref aria-label='Development' onClick={handleClick}><p>Development</p></Link>
-                <Link href='/webdesign' passHref aria-label='Webdesigns' onClick={handleClick}><p>Webdesign</p></Link>
-                <Link href='/info' passHref aria-label='Info' onClick={handleClick}><p>Info</p></Link>
+                <Link href='/development/DevSection' passHref aria-label='Development' onClick={handleClick}><p>Development</p></Link>
+                <Link href='/webdesign/WebdesignSection' passHref aria-label='Webdesigns' onClick={handleClick}><p>Webdesign</p></Link>
+                <Link href='/info/InfoSection' passHref aria-label='Info' onClick={handleClick}><p>Info</p></Link>
             </StyledNav>
 
         </Fragment>

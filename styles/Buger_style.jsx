@@ -14,8 +14,9 @@ export const StyledBurger = styled.div`
         @media screen and (max-width: 600px) {opacity: 1;}
         transition: opacity 0.3s linear;
         
-        i { font-size: 6vh; color: white; }
-        i:hover, i:active { 
+        
+        span { font-size: 6vh; color: white; }
+        span:hover, span:active { 
             
             text-shadow: /* - neon effect - */
                 /* White glow */
