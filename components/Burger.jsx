@@ -1,4 +1,4 @@
-import { StyledBurger } from './Buger_style'
+import { StyledBurger } from '../styles/Buger_style'
 import Link from 'next/link'
 
 

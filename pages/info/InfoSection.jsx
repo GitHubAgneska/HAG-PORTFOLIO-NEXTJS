@@ -7,7 +7,7 @@ import headshot from '../../public/cv/headshot.png'
 import downloadresumeIcon from '../../public/icons/download_resume_icon.png'
 import githubIcon from '../../public/icons/github_logo_white.png'
 import linkedinIcon from '../../public/icons/linkedin_logo.png'
-import { StyledInfoSection, InfoSectionWrapper, InfoPres, InfoPresText,InfoPresLinks, GroupIconsWrapper, IconWrapper, DownloadIconWrapper} from './InfoSection_style'
+import { StyledInfoSection, InfoSectionWrapper, InfoPres, InfoPresText,InfoPresLinks, GroupIconsWrapper, IconWrapper, DownloadIconWrapper} from '../../styles/InfoSection_style'
 
 const githubagneska = 'https://github.com/GitHubAgneska'
 const linkedIn = 'https://www.linkedin.com/in/h-agnes-genay/'

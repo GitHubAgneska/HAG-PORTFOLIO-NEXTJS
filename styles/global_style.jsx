@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     body { 
         margin: 0; height: 100vh;
-        background-image: url('../public/images/nightsky_gradient-2.png');
+        background-image: url('/bg/nightsky_gradient-2.png');
         background-repeat: no-repeat;
         background-position: cover;
     }

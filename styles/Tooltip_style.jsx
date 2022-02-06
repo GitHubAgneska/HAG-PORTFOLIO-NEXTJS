@@ -6,7 +6,7 @@ import styled from 'styled-components'
 export const StyledTooltip = styled.span`
     visibility: hidden;
     width: 120px;
-    position: absolute;
+    position: absolute; 
     z-index: 1;
     /* top: -42px; */
     background-color: black;

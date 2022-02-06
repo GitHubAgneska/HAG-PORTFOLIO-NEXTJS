@@ -1,4 +1,4 @@
-import { FooterSection } from './Footer_style'
+import { FooterSection } from '../styles/Footer_style'
 
 
 const Footer = () => {

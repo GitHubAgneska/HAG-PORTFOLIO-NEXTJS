@@ -1,12 +1,10 @@
-import {appItems} from '../../../data/app-items'
-import AppItem from '../../components/app-item/App-item'
-import {StyledSection, ListWrapper, StyledUl} from './DevSection_style'
-
+import {appItems} from '../../public/data/app-items'
+import AppItem from '../../components/App-item'
+import {StyledSection, ListWrapper, StyledUl} from '../../styles/DevSection_style'
 
 const DevSection = () => {
     return (
         <main>
-            
             <StyledSection>
                 <ListWrapper>
                     <StyledUl> {

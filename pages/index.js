@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-
+import NavComponent from '../components/Nav'
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-
+        <NavComponent hostParent="home" />
       </main>
 
       <footer className={styles.footer}>

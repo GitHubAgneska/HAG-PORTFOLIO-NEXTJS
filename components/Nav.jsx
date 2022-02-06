@@ -1,8 +1,8 @@
 import React, { Fragment, useState } from 'react'
 import Link from 'next/link'
 // import { NavLink } from 'react-router-dom'
-import { StyledNav } from './Nav_style'
-import Burger from '../burger/Burger'
+import { StyledNav } from '../styles/Nav_style'
+import Burger from './Burger'
 
 const NavComponent = ({ hostParent }) => {
 

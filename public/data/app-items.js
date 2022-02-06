@@ -1,5 +1,5 @@
 
-const logoPath = '../logos/'
+const logoPath = '/logos/'
 export const appItems = [
   {
     name: 'candychase',

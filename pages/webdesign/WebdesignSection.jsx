@@ -1,5 +1,5 @@
-import {WebdesignStyledSection, CarouselWrapper} from './WebdesignSection_style'
-import HagCarousel from '../Carousel/Carousel'
+import {WebdesignStyledSection, CarouselWrapper} from '../../styles/WebdesignSection_style'
+import HagCarousel from '../../components/Carousel'
 
 const WebdesignSection = () => {
     return (
