@@ -26,8 +26,8 @@ export const StyledNav = styled.nav`
     
     /* ---- HOME PAGE DESKTOP ONLY: nav is full page ----- */
     ${({ hostParent }) => hostParent === 'home' && `
-        position: absolute; height:90vh; width: 90%;
-        top: 5vh; margin: auto; 
+        position: absolute; height:90vh; width: 100%;
+        top: 2vh; margin: auto; 
         
         flex-flow: column nowrap;  
         @media screen and (min-width: 600px) {

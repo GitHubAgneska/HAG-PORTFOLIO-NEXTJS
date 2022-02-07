@@ -24,7 +24,7 @@ export const GlobalStyle = createGlobalStyle`
     a, input, button {cursor: pointer; }
     a { text-decoration: none; }
 
-    .app-container {
+    .container {
         height: 100vh;
         @media screen and (max-width: 600px) { margin: 0% 5%;}
         @media screen and (min-width: 600px) {margin: 0% 10%;} 
