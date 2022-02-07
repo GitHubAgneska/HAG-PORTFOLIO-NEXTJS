@@ -17,7 +17,7 @@ import NavComponent from '../components/Nav'
 const MainLogo = React.forwardRef(({ onClick, href }, ref) => {
   return (
     <a href={href} onClick={onClick} ref={ref}>
-      <Image src="/logos/hag_logo_white_full.png" alt='hag Logo' layout="responsive" />
+      <Image src="/logos/hag_logo_white_full.png" alt='hag Logo' layout="fill" objectFit="contain" />
     </a>
   )
 })

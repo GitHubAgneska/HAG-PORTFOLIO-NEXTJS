@@ -13,10 +13,11 @@ export const StyledHeader = styled.header`
 
 export const MainLogoWrapper = styled.div`
     border:1px solid red; 
-    @media screen and (max-width: 600px) {width: 7vh;}
-    @media screen and (min-width: 600px) {width: 10vh;}
+    @media screen and (max-width: 600px) {width: 7vh; height:90%;}
+    @media screen and (min-width: 600px) {width: 10vh; height:90%;}
     margin: 2%;
-    a { display: block; }
+    a { display: block; position: relative; width:100%; height: 100%; }
+    
     transition: all 1s ease-in-out;
 `
 
