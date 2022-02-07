@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Image from 'next/image'
 
 export const StyledTooltip = styled.span`
     visibility: hidden;
@@ -89,7 +90,7 @@ export const AppLogoWrapper = styled.div`
     ` }
 `
 
-export const SpecialImg = styled.img`
+export const SpecialImg = styled(Image)`
         &:hover { box-shadow: unset !important; }
         opacity: 1 !important;
         box-shadow:  0 0 1rem #000000, inset 0 0 10rem #00000080;

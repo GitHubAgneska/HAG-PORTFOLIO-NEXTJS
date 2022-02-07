@@ -27,7 +27,7 @@ const AppItem = (app) => {
               </a>
               
               { !app[a].deployed && 
-                <SpecialImg src={deployongoing} alt='ongoing deploy icon' />
+                <SpecialImg src={deployongoing} alt='ongoing deploy icon' layout="fill" />
               }
 
             </AppLogoWrapper>
