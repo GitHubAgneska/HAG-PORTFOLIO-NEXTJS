@@ -51,30 +51,38 @@ export const InfoPres =  styled.div`
         img {
             min-width: 80px;
             border-radius: 50%;
-            
-        /* max-width:100%;
-            height:auto;
-            max-height: 80px; */
         }
     }
 
 `
 export const InfoPresText = styled.div`
-    /* flex-basis: 70%; */
-    line-height:1.2;
-    overflow: hidden;
     max-height: 100%;
+    overflow: hidden;
+
+    line-height:1.2;
     text-overflow: ellipsis;
+
     h1, h2, h3 {margin: 0;}
+    a h3 { color: white;  transition: all 0.3s ease-in-out;}
+    
+    a h3:hover {
+        padding: 2%;
+        border: 1px solid white;
+        border-radius:2px;
+        box-shadow:  /* border neon effect */
+                    0 0 0.8rem #bc13fe,
+                    0 0 2.8rem #bc13fe,
+                    inset 0 0 1.3rem #bc13fe;
+    }
+
     @media screen and (max-width: 600px) {
-        h1, h2 { font-size: calc(1vw + 1vh + 1vmin);} 
+        h1, h2 { font-size: calc(1vw + 1vh + 1vmin);}
         h3 {font-size: calc(1vw + 1vh + 0.8vmin); }
     }
     @media screen and (min-width: 600px) {
         h1, h2 {font-size: calc(1.5vw + 0.3vh + 1vmin); }
         h3 {font-size: calc(1vw + 1vh + 0.3vmin); }
     }
-    
     @media screen and (min-width: 1200px) {
         h1, h2 { font-size: calc(1.5vw + 0vh + 0vmin); }
     }
@@ -99,28 +107,34 @@ export const GroupIconsWrapper = styled.div`
     div { margin: 5%; }
 `
 
-export const IconWrapper = styled.div`
-
+export const IconWrapper = styled.div` 
+    border: 1px solid white; border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    align-content: center;
+    a {
+        display: block; display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
     img {  
         max-width:100%; height:auto;
-        max-height: 60px;min-width: 30px;
-        border-radius: 50%;
+        max-height: 60px; min-width: 30px;
     }
-    img:hover {
+    &:hover {
+        border-radius:5px;
+        transition: all 0.1s ease-in-out; 
+        /* border neon effect */
         box-shadow: 
-        0 0 0.8rem #bc13fe,
-        0 0 2.8rem #bc13fe,
-        inset 0 0 03rem #bc13fe;
-        transition: all 0.2s linear;
+                    0 0 0.8rem #bc13fe,
+                    0 0 2.8rem #bc13fe,
+                    inset 0 0 1.3rem #bc13fe;       
     }
 `
 export const DownloadIconWrapper = styled(IconWrapper)`
-
-    @media screen and (max-width: 600px) {margin: 10%; height: 23vh;}
+    @media screen and (max-width: 600px) {margin: 10%;}
     @media screen and (min-width: 600px) {margin: 5%;}
 
     img {  
@@ -129,5 +143,4 @@ export const DownloadIconWrapper = styled(IconWrapper)`
         max-height: 90px;
         min-width: 40px;
     }
-
 `

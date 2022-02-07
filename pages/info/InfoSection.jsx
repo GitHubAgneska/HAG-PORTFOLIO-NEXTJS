@@ -1,8 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
-
 // import { NavLink } from 'react-router-dom'
+import Image from 'next/image'
 
 import headshot from '../../public/cv/headshot.png'
 import downloadresumeIcon from '../../public/icons/download_resume_icon.png'
@@ -13,15 +12,6 @@ import { StyledInfoSection, InfoSectionWrapper, InfoPres, InfoPresText,InfoPresL
 const githubagneska = 'https://github.com/GitHubAgneska'
 const linkedIn = 'https://www.linkedin.com/in/h-agnes-genay/'
 
-// https://nextjs.org/docs/api-reference/next/link#if-the-child-is-a-function-component
-// eslint-disable-next-line react/display-name
-const DownloadLink = React.forwardRef(({ onClick, href }, ref) => {
-    return (
-        <a href={href} onClick={onClick} ref={ref}>
-            <Image src={downloadresumeIcon} alt='download resume icon' />
-        </a>
-    )
-})
 
 const InfoSection = () => {
     return (
@@ -33,16 +23,16 @@ const InfoSection = () => {
                     <InfoPresText>
                         <h1>H.Agnes Genay</h1>
                         <h2>Frontend developer & creative</h2>
-                        <h3>agneska.dev@gmail.com</h3>
+                        <a href="mailto:agneska.dev@gmail.com"><h3>agneska.dev@gmail.com</h3></a>
                     </InfoPresText>
                 </InfoPres>
 
                 <InfoPresLinks>
     
                     <DownloadIconWrapper>
-                        <Link href="../../public/cv/HAG_frontend_dev-CV_2022.png" passHref target="_blank" download>
-                            <DownloadLink />
-                        </Link>
+                        <a href="/cv/HAG_frontend_dev-CV_2022.png" target="_blank" download rel="noopener noreferrer">
+                            <Image src={downloadresumeIcon} alt='download resume icon' />
+                        </a>
                     </DownloadIconWrapper>
 
                     
