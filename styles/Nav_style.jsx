@@ -26,15 +26,18 @@ export const StyledNav = styled.nav`
     
     /* ---- HOME PAGE DESKTOP ONLY: nav is full page ----- */
     ${({ hostParent }) => hostParent === 'home' && `
+        position: absolute; height:90vh; width: 90%;
+        top: 5vh; margin: auto; 
         
         flex-flow: column nowrap;  
         @media screen and (min-width: 600px) {
 
-            height:60%; 
-            margin: 3% 8.5%;
+           /*  height:60%;  */
+           /*  margin: 3% 8.5%; */
+            
             font-size: calc(2vw + 3vh + 1vmin);
 
-            a { padding: 3%; }
+            a { padding: 3%; transition: all 0.5s linear;}
             a:first-child {  align-self: end; margin-left: 8.5%; }
             a:nth-child(2) { align-self: start;}
             a:nth-child(3) { align-self: end; }
