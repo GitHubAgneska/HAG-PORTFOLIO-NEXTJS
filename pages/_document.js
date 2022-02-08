@@ -33,6 +33,7 @@ export default class MyDocument extends Document {
         return (
             <Html>
                 <Head>
+                    <meta property="og:image" content='/imgs/preview.png' key="ogimage" />
                     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet"></link>
                     <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Roboto&family=Shrikhand&display=swap" rel="stylesheet"></link> 
                 </Head>
