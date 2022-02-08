@@ -8,7 +8,7 @@ export default function Home() {
         <title>HAG portfolio 2022</title>
         <meta name="description" content="HAG portfolio" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content={previewImage} key="ogimage" />
+        <meta property="og:image" content='../public/imgs/preview.png' key="ogimage" />
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
