@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import previewImage from '../public/imgs/preview.png'
 
-export default function Home({previewImage}) {
+export default function Home() {
   return (
     <div>
       <Head>
@@ -9,6 +9,7 @@ export default function Home({previewImage}) {
         <meta name="description" content="HAG portfolio" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={previewImage} key="ogimage" />
+        <meta name="image" property="og:image" content={previewImage}></meta>
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
