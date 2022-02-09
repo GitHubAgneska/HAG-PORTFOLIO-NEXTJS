@@ -13,7 +13,7 @@ export const appItems = [
   {
     name: 'hrnet',
     deployed: true,
-    keywords: ['HR platform', 'Refactoring JS/JQuery to MERN'] ,
+    keywords: ['HR platform', 'MERN Refactoring'] ,
     logo: logoPath + 'hrnet_logo_bright.png',
     logo2: 'hag_logo_2020_small.png',
     deployLink: 'https://hrnet.herokuapp.com/',
@@ -22,7 +22,7 @@ export const appItems = [
   },
   {
     name: 'sportsee',
-    deployed: false,
+    deployed: true,
     keywords: ['Dashboard analytics', 'React/Express', 'Recharts', 'API'],
     logo: logoPath + 'sportsee_logo_main.png',
     deployLink: 'https://sportsee.herokuapp.com/',
